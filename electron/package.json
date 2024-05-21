@@ -1,0 +1,47 @@
+{
+  "name": "spasswdm",
+  "productName": "SimplePasswordManager",
+  "version": "1.0.0",
+  "description": "A simple tool to store password in an encrypted file.",
+  "type": "commonjs",
+  "main": "./build/main.bundle.js",
+  "scripts": {
+    "build": "esbuild ./src/main.js --bundle --platform=node --format=cjs --packages=external --outfile=./build/main.bundle.js && esbuild ./src/preload.js --bundle --platform=node --format=cjs --packages=external --outfile=./build/preload.bundle.js",
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cufoon/SimplePasswordManager.git"
+  },
+  "keywords": [
+    "password",
+    "manager"
+  ],
+  "author": "Cufoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cufoon/SimplePasswordManager/issues"
+  },
+  "homepage": "https://github.com/Cufoon/SimplePasswordManager#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^30.0.1",
+    "esbuild": "^0.20.2",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^8.2.0",
+    "litaes": "^1.0.9"
+  }
+}

@@ -1,0 +1,38 @@
+.wrapper {
+  position: absolute;
+  z-index: 199;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 400px;
+  flex-direction: column;
+
+  &-title {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #c5c5c5;
+    margin-bottom: 10px;
+  }
+
+  &-operate {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+  }
+}

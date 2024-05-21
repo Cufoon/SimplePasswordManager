@@ -1,0 +1,53 @@
+:root {
+    font-family: "MiSans", "SF Pro SC", "SF Pro Text", "SF Pro Icons",
+    "PingFang SC", "HarmonyOS_Regular", "Helvetica Neue",
+    "Microsoft YaHei", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #f0f0f0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 12px;
+}
+
+div, button {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: rgb(240, 240, 240);
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background-color: rgb(240, 240, 240);
+}
+
+html::-webkit-scrollbar-button {
+    width: 4px;
+    height: 4px;
+    border-radius: 12px;
+    background-color: rgb(240, 240, 240);
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    background-color: rgb(200, 200, 200);
+}

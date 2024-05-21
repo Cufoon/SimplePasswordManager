@@ -1,0 +1,16 @@
+.button {
+  border-radius: 10px;
+  line-height: 1.5;
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  box-shadow: 0 0 20px 2px rgb(0 0 0 / 2%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.primary {
+  background-color: #3480e3;
+  color: white;
+}
